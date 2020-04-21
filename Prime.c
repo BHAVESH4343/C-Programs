@@ -3,10 +3,10 @@ int prime(int);
 int n;
 int main()
 {
-  int x,result,i;
+  int x,result;
   scanf("%d",&x);
-  i=x/2;
-  result=prime(n);
+  n=x/2;
+  result=prime(x);
   if(result==1)
   {
     printf("It is a prime");
@@ -22,7 +22,7 @@ int main()
     {
       return 1;
     }
-    else if(x%n==1)
+    else if(x%n==0)
     {
       return 0;
     }
