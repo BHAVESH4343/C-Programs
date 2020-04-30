@@ -9,7 +9,7 @@ struct employee
 {
 int i,p=1;
 struct employee e;
-for(i=0;i<=2;i++)
+for(i=0;i<=20;i++)
 {
 	printf("Enter the data for Employee - %d\n",p);
 	p++;
