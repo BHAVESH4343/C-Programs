@@ -1,0 +1,16 @@
+#include<stdio.h>
+int swap(int x,int y,int z,int a);
+int swap1(int x,int y,int z,int a);
+int swap2(int x,int y,int z,int a);
+int main()
+{
+	int x,y,z,a;
+	scanf("%d %d %d",&x,&y,&z);
+	int temp=x;
+	a=x*y*z;
+	x=swap(x,y,z,a);
+	y=swap1(x,y,z,a);
+	z=swap2(temp,y,z,a);
+	printf("x=%d\ny=%d\nz=%d",x,y,z);
+	return 0;
+}
